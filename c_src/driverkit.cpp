@@ -328,7 +328,7 @@ extern "C" {
 // main function is just for testing
 // build as binary command:
 // g++ c_src/driverkit.cpp -Ic_src/Karabiner-DriverKit-VirtualHIDDevice/include/pqrs/karabiner/driverkit -Ic_src/Karabiner-DriverKit-VirtualHIDDevice/src/Client/vendor/include -std=c++2a -framework IOKit -framework CoreFoundation -o driverkit
-#ifdef BUILD_AS_BINARY
+#ifdef BUILD_AS_BINARY__TEST_MAIN
 int main() {
     list_keyboards();
     std::cout << "test device_matches:" << std::boolalpha << std::endl <<
